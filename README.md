@@ -46,7 +46,7 @@ ALLOWED_NODES["your_mod:your_block"] = true
 ## How to Play
 
 1. **Build Your Ship**: Construct your vessel using supported blocks (wood, glass, steel, etc.). Keep it within a reasonable size to avoid performance drops. For airships, incorporate balloons (crafted with wool and paper).
-2. **Place the Helm**: Craft a Ship Helm and place it on your ship. The front of the helm dictates the front of the ship.
+2. **Place the Helm**: Craft a Ship Helm (using wood, a repair kit, and mese crystals/blocks) and place it on your ship. The front of the helm dictates the front of the ship.
 3. **Set Sail**: Right-click the helm to take control. Your ship will lift off the grid, and you can steer it using your standard movement keys.
 4. **Anchor**: When you reach your destination, right-click the helm again to anchor the ship, converting it back into regular blocks.
 

@@ -284,7 +284,7 @@ minetest.register_node("plutoniumships:barre",{
 })
 minetest.register_craft({output="plutoniumships:barre",recipe={
     {"default:wood","plutoniumships:repair_kit","default:wood"},
-    {"mesecons_materials:glue","mesecons_powerplant:power_plant","mesecons_materials:glue"},
+    {"default:mese_crystal","default:mese_block","default:mese_crystal"},
     {"default:wood","default:wood","default:wood"},
 }})
 
