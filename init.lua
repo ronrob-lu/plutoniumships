@@ -23,7 +23,7 @@ local function cfg_int(n, d)   return math.floor(tonumber(minetest.settings:get(
 local function cfg_float(n, d) return tonumber(minetest.settings:get(n)) or d end
 
 local cfg = {
-    max_size         = cfg_int  ("plutoniumships_max_size",          50),
+    max_size         = cfg_int  ("plutoniumships_max_size",          5000),
     min_size         = cfg_int  ("plutoniumships_min_size",          10),
     balloon_ratio    = cfg_float("plutoniumships_balloon_ratio",      0.5),
     max_speed        = cfg_float("plutoniumships_max_speed",         10.0),
