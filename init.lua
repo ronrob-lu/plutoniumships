@@ -312,9 +312,9 @@ for _,c in ipairs(BALLOON_COLORS) do
         groups={cracky=1,balloon=1},
     })
     minetest.register_craft({output=nm.." 2",recipe={
-        {"xdecor:rope", c.wool,                "xdecor:rope"},
-        {c.wool,        "default:mese_crystal", c.wool},
-        {"xdecor:rope", c.wool,                "xdecor:rope"},
+        {"default:paper", c.wool,                "default:paper"},
+        {c.wool,          "default:mese_crystal", c.wool},
+        {"default:paper", c.wool,                "default:paper"},
     }})
 end
 -- Alias rétrocompat : "plutoniumships:ballon" → blanc
