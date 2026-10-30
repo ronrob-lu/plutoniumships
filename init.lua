@@ -23,7 +23,7 @@ local function cfg_int(n, d)   return math.floor(tonumber(minetest.settings:get(
 local function cfg_float(n, d) return tonumber(minetest.settings:get(n)) or d end
 
 local cfg = {
-    max_size         = cfg_int  ("plutoniumships_max_size",          50),
+    max_size         = cfg_int  ("plutoniumships_max_size",          5000),
     min_size         = cfg_int  ("plutoniumships_min_size",          10),
     balloon_ratio    = cfg_float("plutoniumships_balloon_ratio",      0.5),
     max_speed        = cfg_float("plutoniumships_max_speed",         10.0),
@@ -284,7 +284,7 @@ minetest.register_node("plutoniumships:barre",{
 })
 minetest.register_craft({output="plutoniumships:barre",recipe={
     {"default:wood","plutoniumships:repair_kit","default:wood"},
-    {"mesecons_materials:glue","mesecons_powerplant:power_plant","mesecons_materials:glue"},
+    {"default:mese_crystal","default:mese_block","default:mese_crystal"},
     {"default:wood","default:wood","default:wood"},
 }})
 
