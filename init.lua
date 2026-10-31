@@ -357,16 +357,6 @@ function detect_structure(start_pos)
                 end
             else
                 banned[nd.name]=true
-                -- Continuer à explorer depuis les blocs non autorisés aussi
-                for _,d in ipairs(DIRS6) do
-                    local nb=vector.add(pos,d)
-                    if not visited[minetest.pos_to_string(nb)] then
-                        local nbn=minetest.get_node(nb)
-                        if nbn.name~="air" and nbn.name~="ignore" then
-                            table.insert(stack,nb)
-                        end
-                    end
-                end
             end
         end
         ::_nxt::
